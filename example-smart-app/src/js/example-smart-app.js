@@ -25,6 +25,10 @@
                     }
                   });
         console.log('22222');
+        console.log(pt);
+        console.log('33333');
+        console.log(obv);
+        console.log('44444');
         $.when(pt, obv).fail(onError);
 
         $.when(pt, obv).done(function(patient, obv) {
