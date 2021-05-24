@@ -9,7 +9,7 @@
 
     function onReady(smart)  {
       if (smart.hasOwnProperty('patient')) {
-        console.log('aaaaaaaaaaa');
+        console.log('11111');
         console.log(smart);
         var patient = smart.patient;
         console.log(patient);
@@ -24,7 +24,7 @@
                       }
                     }
                   });
-        console.log('aaaaaaaaa');
+        console.log('22222');
         $.when(pt, obv).fail(onError);
 
         $.when(pt, obv).done(function(patient, obv) {
