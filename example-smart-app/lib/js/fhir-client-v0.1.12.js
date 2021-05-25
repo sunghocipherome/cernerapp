@@ -1184,6 +1184,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	    
 	    function drain (searchParams, process, done, fail) {
 	        var ret = adapter.defer();
+		console.log("==============");
+		console.log(fhirAPI);
 	        console.log("A");
 	        fhirAPI.search(searchParams).then(function(data){
 	            getNext(data, process).then(function() {
