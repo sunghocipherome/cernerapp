@@ -1217,7 +1217,8 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	    function fetchAllWithReferences (searchParams, resolveParams) {
 	        var ret = adapter.defer();
-	          
+	        console.log('12121212');
+		conseol.log(ret);
 	        fhirAPI.search(searchParams)  // TODO: THIS IS NOT CORRECT (need fetchAll, but it does not return a bundle yet)
 	            .then(function(results){
 
