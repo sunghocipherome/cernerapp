@@ -1197,6 +1197,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	        var ret = adapter.defer();
 	        var results = [];
 	        
+		console.log("=====Patient.fetchAll()=====");
+		console.log(searchParams);
+		console.log("==========");
+		console.log(ret);
+		    
 	        drain(
 	            searchParams,
 	            function(entries) {
