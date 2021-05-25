@@ -1168,6 +1168,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        var entries = [];
 	        for (i = 0; i < d.length; i++) {
 	            entries.push(d[i].resource);
+		    console.log("entry" + i + ": " + d[i].resource);
 	        }
 	        process(entries);
 	        var def = adapter.defer();
