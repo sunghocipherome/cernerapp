@@ -1166,6 +1166,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        var i;
 	        var d = bundle.data.entry || [];
 	        var entries = [];
+		console.log("E");
 	        for (i = 0; i < d.length; i++) {
 	            entries.push(d[i].resource);
 		    console.log("entry" + i + ": " + d[i].resource);
@@ -1177,19 +1178,23 @@ return /******/ (function(modules) { // webpackBootstrap
 	                def.resolve();
 	            });
 	        }, function(err) {def.resolve()});
+		console.log("F");
 	        return def.promise;
 	    }
 	    
 	    function drain (searchParams, process, done, fail) {
 	        var ret = adapter.defer();
-	        
+	        console.log("A");
 	        fhirAPI.search(searchParams).then(function(data){
 	            getNext(data, process).then(function() {
+			console.log("B");
 	                done();
 	            }, function(err) {
+			console.log("C");    
 	                fail(err);
 	            });
 	        }, function(err) {
+		    console.log("D");
 	            fail(err);
 	        });
 	    };
