@@ -34,6 +34,10 @@
         console.log(smart.user.read());
         console.log('===========');
         
+        $.when(smart.user.read()).done(function(user) {
+          console.log("============user user ===========");
+          console.log(user);
+        };
         
         $.when(pt, obv).fail(onError);
 
