@@ -29,12 +29,22 @@
         console.log('33333');
         console.log(obv);
         console.log('44444');
+        
+        console.log('===========user');
+        console.log(smart.user.read());
+        console.log('===========');
+        
+        
         $.when(pt, obv).fail(onError);
 
         $.when(pt, obv).done(function(patient, obv) {
           var byCodes = smart.byCodes(obv, 'code');
           var gender = patient.gender;
-
+          
+          console.log('=========Patient==========');
+          console.log(patient);
+          console.log('================');
+  
           var fname = '';
           var lname = '';
 
