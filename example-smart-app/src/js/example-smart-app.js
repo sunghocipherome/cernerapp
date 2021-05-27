@@ -35,7 +35,7 @@
         console.log(smart.get({resource: 'encounter', id: '97953495'}));
         console.log('===========');
         
-        $.when(smart.get({resource: 'encounter', id: '97953495'}).done(funtion(encounter) {
+        $.when(smart.get({resource: 'encounter', id: '97953495'})).done(funtion(encounter) {
           console.log("============encounter===========");
           console.log(encounter);
           console.log("===============================");                                                               
