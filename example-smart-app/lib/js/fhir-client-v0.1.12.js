@@ -17577,7 +17577,7 @@ function FhirClient(p) {
       'read': function(){
         var userId = client.userId;
 	console.log("userId: " + userId);
-        resource = userId.split("/")[4];
+        resource = userId.split("/")[5];
 	console.log("user.read.resource: " + resource);
         uid = userId.split("/")[6];
 	console.log("user.read.uid: " + uid);
