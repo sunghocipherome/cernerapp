@@ -32,7 +32,7 @@
         
         console.log('===========user');
         console.log(smart.user.read());
-        console.log(smart.get({resource: 'encounter', id: '97953495'});
+        console.log(smart.get({resource: 'encounter', id: '97953495'}));
         console.log('===========');
         
         $.when(smart.get({resource: 'encounter', id: '97953495'}).done(funtion(encounter) {
