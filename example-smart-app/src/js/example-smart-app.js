@@ -37,6 +37,7 @@
         $.when(smart.user.read()).done(function(user) {
           console.log("============user user ===========");
           console.log(user);
+          console.log(user.text);
         });
         
         $.when(pt, obv).fail(onError);
